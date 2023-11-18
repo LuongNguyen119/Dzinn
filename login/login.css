@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' , sans-serif;
+}
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('../image/background1.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.header
+{
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    top: -5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+    z-index: 99;
+    background: transparent;
+}
+.header .nav a
+{
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+    margin-left: 20px;
+    font-weight: 600;
+}
+.login
+{
+    width: 600px;
+    height: 600px;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.box1
+{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+.box2 .input , .box3 .input
+{
+    display: flex;
+    width: 100%;
+    height: 40px;
+    font-size: 15px;
+    padding-left: 40px;
+    margin-bottom: 20px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid black;
+}
+  ::placeholder
+  {
+    font-size: 15px;
+    color: black;
+  }
+  .box2 i
+  {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  .box3 i
+  {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+.box4
+{
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+.box4 a
+{
+    text-decoration: none;
+    color: rgb(249, 37, 37);
+}
+.box5 button
+{
+    width: 100%;
+    height: 50px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    background-color: rgb(0, 174, 255);
+    color: white;
+    border-radius: 25px;
+}
+.box8
+{
+    font-size: 14px;
+    color: #2fe41b;
+}
