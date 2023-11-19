@@ -5,9 +5,39 @@
     <meta name="viewport" content="width=device-width, iniial-scale=1.0">
     <link rel="shortcut icon" href="./image/icon.png" />
     <link rel="stylesheet" href="./hometext.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://kit.fontawesome.com/c9f5871d83.js" crossorigin="anonymous"></script>
     <title>Dzinn Music | Trang chủ</title>
 <body>
+  <style>
+    @media screen and (max-width: 768px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+      #toggle {
+        display: block;
+      }
+      nav {
+        display: none;
+      }
+      
+    }
+    #toggle {
+      background: #454545;
+      text-align: right;
+      padding: 10px;
+      font-size: 20px;
+    }
+  </style>
+  <script>
+    $(document).ready(function(){
+      $('toggle').click(function(){
+        $('nav').slideToggle();
+      })
+    })
+  </script>
     <header class="header">
         <div class="navbar">
             <a class="navbar-brand" href="http://dzinnmusic.vn">
@@ -16,6 +46,7 @@
         </a>
         </div>
         <nav class="nav">
+          <i class="fa-solid fa-bars" style="color: #00bfff;"></i>
             <a class="tl-item" href="./home.html">Home</a>
             <a class="tl-item" href="#">Đối Tác</a>
             <a class="tl-item" href="#">Sản Phẩm</a>
